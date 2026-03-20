@@ -3,79 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAX MOVIES | DOWNLOAD HD</title>
+    <title>BRAX MOVIES | LATEST HD</title>
     <style>
-        :root { --main-blue: #00d2ff; --bg: #0b0b0b; }
-        body { background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        :root { --accent: #00ffcc; --bg: #050505; --card: #121212; }
+        body { background: var(--bg); color: white; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        
+        /* HEADER KIBABE */
+        header { background: #000; padding: 20px; text-align: center; border-bottom: 2px solid var(--accent); box-shadow: 0 0 15px var(--accent); }
+        .logo { font-size: 26px; font-weight: 900; letter-spacing: 2px; }
+        .logo span { color: var(--accent); }
 
-        /* NAV KIBABE */
-        nav { background: #000; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222; sticky: top; }
-        .logo { font-size: 22px; font-weight: 900; color: var(--main-blue); }
-        input[type="text"] { background: #1a1a1a; border: 1px solid #333; color: white; padding: 8px 15px; border-radius: 20px; width: 150px; }
-
-        .container { padding: 20px; }
-        h2 { font-size: 18px; border-left: 4px solid var(--main-blue); padding-left: 10px; margin-bottom: 20px; }
+        .search-box { padding: 20px; text-align: center; }
+        #search-input { width: 80%; max-width: 400px; padding: 12px; border-radius: 25px; border: 1px solid var(--accent); background: #111; color: white; outline: none; }
 
         /* MOVIE GRID */
-        .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; }
+        .container { padding: 15px; }
+        #movie-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
         
-        .movie-card { background: #151515; border-radius: 10px; overflow: hidden; position: relative; transition: 0.3s; }
-        .movie-card:hover { transform: scale(1.05); }
+        .movie-card { background: var(--card); border-radius: 12px; overflow: hidden; transition: 0.3s; position: relative; border: 0.5px solid #222; }
+        .movie-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .poster { width: 100%; height: 225px; object-fit: cover; }
         
-        .poster { width: 100%; height: 210px; background: #333; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666; }
-        .movie-info { padding: 10px; }
-        .title { font-size: 13px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .year { font-size: 11px; color: var(--main-blue); }
+        .movie-info { padding: 10px; text-align: center; }
+        .title { font-size: 14px; font-weight: bold; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .rating { font-size: 12px; color: var(--accent); font-weight: bold; }
 
-        .quality { position: absolute; top: 5px; right: 5px; background: var(--main-blue); color: black; font-size: 9px; font-weight: 900; padding: 2px 5px; border-radius: 3px; }
-
-        /* DOWNLOAD BUTTON */
-        .btn-dl { width: 100%; background: #222; color: white; border: none; padding: 8px; font-size: 12px; cursor: pointer; border-top: 1px solid #333; transition: 0.3s; }
-        .btn-dl:hover { background: var(--main-blue); color: black; }
+        .btn-play { width: 100%; background: var(--accent); color: black; border: none; padding: 10px; font-weight: bold; cursor: pointer; }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">BRAX<span>MOVIES</span></div>
-        <input type="text" placeholder="Search movie...">
-    </nav>
+    <header><div class="logo">BRAX<span>MOVIES</span></div></header>
 
-    <div class="container">
-        <h2>LATEST UPLOADS</h2>
-
-        <div class="movie-grid">
-            <div class="movie-card">
-                <div class="quality">720p WEB</div>
-                <div class="poster" style="background: url('https://image.tmdb.org/t/p/w500/6Wv97oR9G7Y6860oypA97S9ZpqB.jpg') center/cover;"></div>
-                <div class="movie-info">
-                    <div class="title">Avatar: The Way of Water</div>
-                    <div class="year">2022 • 1.2 GB</div>
-                </div>
-                <button class="btn-dl" onclick="alert('Inatafuta Torrent Link...')">DOWNLOAD NOW</button>
-            </div>
-
-            <div class="movie-card">
-                <div class="quality">1080p BluRay</div>
-                <div class="poster" style="background: url('https://image.tmdb.org/t/p/w500/v9p9zGvRUKzGf9o6vO8tGfF7U0r.jpg') center/cover;"></div>
-                <div class="movie-info">
-                    <div class="title">John Wick: Chapter 4</div>
-                    <div class="year">2023 • 2.5 GB</div>
-                </div>
-                <button class="btn-dl" onclick="alert('Inatafuta Torrent Link...')">DOWNLOAD NOW</button>
-            </div>
-
-            <div class="movie-card">
-                <div class="quality">HDRip</div>
-                <div class="poster" style="background: url('https://image.tmdb.org/t/p/w500/kS9Yn9H6H8H8G7H8H8H8H8H8H.jpg') center/cover; background-color: #333;">NO POSTER</div>
-                <div class="movie-info">
-                    <div class="title">Oppenheimer</div>
-                    <div class="year">2023 • 1.8 GB</div>
-                </div>
-                <button class="btn-dl" onclick="alert('Inatafuta Torrent Link...')">DOWNLOAD NOW</button>
-            </div>
-        </div>
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Tafuta Movie yoyote hapa..." onkeyup="searchMovies()">
     </div>
 
+    <div class="container">
+        <div id="movie-list">
+            </div>
+    </div>
+
+    <script>
+        // API KEY YA KWELI (Hii ni ya siri, inavuta movies zote duniani)
+        const API_KEY = '8265b3d0b9a89704250235336d33816a';
+        const BASE_URL = 'https://api.themoviedb.org/3';
+        const IMG_URL = 'https://image.tmdb.org/t/p/w500';
+
+        // 1. Kuvuta Movie Mpya (UHALISIA)
+        async function getMovies() {
+            const res = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}`);
+            const data = await res.json();
+            showMovies(data.results);
+        }
+
+        function showMovies(movies) {
+            const list = document.getElementById('movie-list');
+            list.innerHTML = '';
+            movies.forEach(movie => {
+                const card = document.createElement('div');
+                card.classList.add('movie-card');
+                card.innerHTML = `
+                    <img src="${IMG_URL + movie.poster_path}" class="poster" alt="${movie.title}">
+                    <div class="movie-info">
+                        <div class="title">${movie.title}</div>
+                        <div class="rating">⭐ ${movie.vote_average}</div>
+                    </div>
+                    <button class="btn-play" onclick="watch('${movie.title}')">ONE CLICK PLAY</button>
+                `;
+                list.appendChild(card);
+            });
+        }
+
+        function searchMovies() {
+            const term = document.getElementById('search-input').value;
+            if(term) {
+                fetch(`${BASE_URL}/search/movie?api_key=${API_KEY}&query=${term}`)
+                .then(res => res.json())
+                .then(data => showMovies(data.results));
+            } else {
+                getMovies();
+            }
+        }
+
+        function watch(title) {
+            alert("Supreme Leader Brax anakuunganisha na Satellite Server... Tafadhali subiri movie: " + title);
+            // Hapa unaweza kuweka link ya kuelekea watchsomuch au server nyingine
+            window.open('https://watchsomuch.to/Search/' + title, '_blank');
+        }
+
+        getMovies();
+    </script>
 </body>
 </html>
